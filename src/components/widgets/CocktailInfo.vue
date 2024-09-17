@@ -15,7 +15,7 @@ const currentCocktailInfo = computed(() => store.cocktailsInfo && store.cocktail
 
 const currentCocktailIngredients = computed(() => {
   const keys = Object.keys(currentCocktailInfo.value).filter(key => key.includes('Ingredient'));
-  return keys.reduce((acc, key) => {
+  return keys.reduce((acc: string[], key: string) => {
     if (currentCocktailInfo.value[key]) {
       acc.push(currentCocktailInfo.value[key])
     }
