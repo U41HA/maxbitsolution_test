@@ -1,0 +1,35 @@
+:root {
+    /* colors */
+    --text-color: #64748b;
+    --color-white: 255, 255, 255; /* #FFFFFF */
+    --color-black: 18, 18, 18; /* #121212 */
+    --color-black-light: 52, 52, 62; /* #34343E */
+    --color-text-grey-light: 174, 174, 191; /* #AEAEBF */
+    --color-text-secondary: 143, 143, 167; /* #8F8FA7 */
+    --color-blue: 104, 89, 245; /* #6859F5 */
+    --color-blue-hover: 124, 110, 253; /* #7C6EFD */
+    --color-blue-hover-light: 244, 246, 255; /* #F4F6FF */
+    --color-blue-dark: 88, 75, 211; /* #584BD3 */
+    --color-blue-light: 245, 246, 251; /* #F5F6FB */
+    --color-blue-superlight: 251, 251, 255; /* #FBFBFF */
+    --color-grey-pale: 239, 239, 245; /* #EFEFF5 */
+    --color-grey-light: 245, 245, 248; /* #F5F5F8 */
+    --color-grey-hover: 234, 234, 242; /* #EAEAF2 */
+    --color-grey-divider: 222, 222, 232; /* #DEDEE8 */
+    --color-grey-new-light: 153, 153, 169; /* #9999A9 */
+    --color-grey-slate: 163, 172, 186; /* #A3ACBA*/
+    --color-red: 239, 70, 80; /* #EF4650 */
+    --color-red-hover: 241, 89, 98; /* #F15962 */
+    --color-red-light: 255, 238, 238; /* #FFEEEE */
+    --color-red-dark: 224, 65, 75; /* #E0414B */
+    --color-purple-gradient: linear-gradient(91.47deg, #5b58f2 17.63%, #a35aff 81.98%);
+    --color-purple-gradient-hover: linear-gradient(
+            91.47deg,
+            #5b58f2 17.63%,
+            #9575fd 50.18%,
+            #a35aff 81.98%
+    );
+    --color-purple-gradient-active: linear-gradient(91.47deg, #5855e8 17.63%, #9652ec 81.98%);
+    --transition-delay-fast: 0.2s;
+    --transition-delay-slow: 0.3s;
+}

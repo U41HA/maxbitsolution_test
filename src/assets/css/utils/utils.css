@@ -1,0 +1,381 @@
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.flex-auto {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-grow {
+    flex-grow: 1;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.items-top {
+    align-items: start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    inset: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-disabled {
+    cursor: not-allowed;
+}
+
+.cursor-auto {
+    cursor: default;
+}
+
+.cursor-text {
+    cursor: text;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.decor {
+    pointer-events: none;
+    user-select: none;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.img-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.svg-container {
+    display: block;
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.svg-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+    display: block;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+/* rounded */
+
+.rounded-4 {
+    border-radius: 5px;
+}
+
+.rounded-5 {
+    border-radius: 5px;
+}
+
+.rounded-6 {
+    border-radius: 6px;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.rounded-12 {
+    border-radius: 12px;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+}
+
+.rounded-20 {
+    border-radius: 20px;
+}
+
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.rounded-48 {
+    border-radius: 48px;
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+.rounded-inherit {
+    border-radius: inherit;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.-rotate-90 {
+    transform: rotate(-90deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+
+/* text */
+
+.white-space-normal {
+    white-space: normal;
+}
+
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+/* bordered */
+
+.bordered-1-divider {
+    border: 1px solid rgb(var(--color-grey-divider));
+}
+
+.border-1-grey-hover {
+    border: 1px solid rgb(var(--color-grey-hover));
+}
+
+/* Plates */
+
+.content-box {
+    background-color: rgb(var(--color-white));
+    border: 1px solid rgb(var(--color-grey-hover));
+    box-shadow: 2px 2px 15px rgba(var(--color-grey-new-light), 0.15);
+}
+
+@media (min-width: 1280px) {
+    .xl\:flex {
+        display: flex;
+    }
+    
+    .xl\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:flex {
+        display: flex;
+    }
+    
+    .lg\:block {
+        display: block;
+    }
+    
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .md\:block {
+        display: block;
+    }
+    
+    .md\:flex {
+        display: flex;
+    }
+    
+    .md\:hidden {
+        display: none;
+    }
+}
+
