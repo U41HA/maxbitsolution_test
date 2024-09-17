@@ -42,8 +42,11 @@ const { loader } = storeToRefs(loaderStore);
 
 .right-col {
   max-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  max-width: 1024px;
+
+  & > * {
+    max-width: 1024px;
+  }
 }
 </style>

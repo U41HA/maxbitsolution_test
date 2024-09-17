@@ -9,13 +9,12 @@ const store = useStore();
 
 const route = useRoute();
 
-const currentCocktail = computed(() => route.path.split('/').at(-1))
+const currentCocktail = computed(() => route.path.split('/').slice(-1)[0])
 
 const currentCocktailInfo = computed(() => store.cocktailsInfo && store.cocktailsInfo[currentCocktail.value])
 
 const currentCocktailIngredients = computed(() => {
   const keys = Object.keys(currentCocktailInfo.value).filter(key => key.includes('Ingredient'));
-  const ingredients = {};
   return keys.reduce((acc, key) => {
     if (currentCocktailInfo.value[key]) {
       acc.push(currentCocktailInfo.value[key])
@@ -103,8 +102,7 @@ ref="lazyRef" :class="['block w-full image',
 
 <style module lang="scss">
 .wrapper {
-  overflow: auto;
-
+  align-items: start;
   & > * {
     flex-basis: 48%;
   }
@@ -112,6 +110,7 @@ ref="lazyRef" :class="['block w-full image',
   @media screen and (max-width: 768px) {
     align-items: start;
     flex-direction: column-reverse;
+    overflow: auto;
   }
 }
 

@@ -1,15 +1,14 @@
 import { useLoaderStore } from '@/stores/loader'
 import { createRouter, createWebHistory } from 'vue-router'
-import type RouteRecordRaw from 'vue-router'
 import Default from '@/layouts/default.vue';
 
-const homeView: RouteRecordRaw = {
+const homeView = {
   path: '/',
   name: '123',
   redirect: '/cocktails'
 }
 
-const layoutDefault: RouteRecordRaw = {
+const layoutDefault = {
   path: '/cocktails',
   component: Default,
   redirect: `/cocktails/margarita`,

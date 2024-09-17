@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import LogoIcon from '~/components/shared/icons/LogoIcon.vue';
 </script>
 
 <template>
   <div class="container">
-    <LogoIcon class="primary-text-color logo" />
-    <h1 class="title">500</h1>
-    <p class="text">На сервере произошла ошибка, повторите попытку позже</p>
+    <h1 class="title">Упс</h1>
+    <p class="text">Кажется, такой страницы не существует</p>
     <div class="containerLink">
-      <a class="link" href="/public">Вернуться</a>
+      <router-link class="link" to="/">На главную</router-link>
     </div>
   </div>
 </template>
