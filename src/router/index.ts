@@ -1,3 +1,4 @@
+import ErrorPage from '@/components/templates/ErrorPage.vue'
 import { useLoaderStore } from '@/stores/loader'
 import { createRouter, createWebHistory } from 'vue-router'
 import Default from '@/layouts/default.vue';
@@ -6,6 +7,12 @@ const homeView = {
   path: '/',
   name: '123',
   redirect: '/cocktails'
+}
+
+const errorPage =  {
+  path: '/:pathMatch(.*)*',
+  name: 'not-found',
+  component: ErrorPage
 }
 
 const layoutDefault = {
@@ -34,7 +41,7 @@ const layoutDefault = {
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [ homeView, layoutDefault ],
+  routes: [ homeView, layoutDefault, errorPage ],
 });
 
 router.beforeEach(() => {

@@ -87,7 +87,10 @@
     color: var(--text-color-secondary);
 }
 
+.cl-blue {
+    color: rgb(var(--color-blue));
+}
+
 .text-medium{
     font-weight: 500;
   }
-  
