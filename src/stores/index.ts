@@ -9,7 +9,6 @@ export const useStore = defineStore('index', () => {
   async function fetchCocktailInfo(cocktailName: string) {
     const { data } = await axios.get(`${API_URL}/json/v1/1/search.php?s=${cocktailName}`);
     cocktailsInfo.value[cocktailName] = data.drinks[0];
-    console.log(data.drinks)
   }
 
   return {
